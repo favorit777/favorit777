@@ -1,0 +1,6 @@
+// moment.js locale configuration
+// locale : great britain english (en-gb)
+// author : Chris Gedrim : https://github.com/chrisgedrim
+(function(a){"function"===typeof define&&define.amd?define(["moment"],a):"object"===typeof exports?module.exports=a(require("../moment")):a(window.moment)})(function(a){return a.defineLocale("en-gb",{months:"Январь Февраль Март Апрель Май Июнь Июль Август Сентябрь Октябрь Ноябрь Декабрь".split(" "),monthsShort:"Янв Фев Мар Апр Май Июн Июл Авг Сен Окт Ноя Дек".split(" "),weekdays:"Воскресенье Понедельник Вторник Среда Четверг Пятница Суббота".split(" "),weekdaysShort:"Вс Пон Вт Ср Чт Пт Субб".split(" "),
+weekdaysMin:"Вс Пон Вт Ср Чт Пт Субб".split(" "),longDateFormat:{LT:"HH:mm",L:"DD/MM/YYYY",LL:"D MMMM YYYY",LLL:"D MMMM YYYY LT",LLLL:"dddd, D MMMM YYYY LT"},calendar:{sameDay:"[Сегодня в] LT",nextDay:"[Завтра в] LT",nextWeek:"dddd [at] LT",lastDay:"[Вчера в] LT",lastWeek:"[Last] dddd [at] LT",sameElse:"L"},relativeTime:{future:"in %s",past:"%s назад",s:"несколько секунд",m:"минуту",mm:"%d минут",h:"час",hh:"%d часов",d:"день",dd:"%d дней",M:"месяц",MM:"%d месяцев",y:"год",yy:"%d лет"},
+ordinal:function(a){var b=a%10;return a+(1===~~(a%100/10)?"th":1===b?"st":2===b?"nd":3===b?"rd":"th")},week:{dow:1,doy:4}})});
